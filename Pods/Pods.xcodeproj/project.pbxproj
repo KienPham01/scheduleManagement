@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		102D4C3B018722F1F2CB8582AEC11B48 /* Pods-scheduleManagement-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9F42E7341C2A2F0E33C627A3266C29A /* Pods-scheduleManagement-dummy.m */; };
+		18D83FEAA051737F52D972E9B32AE85B /* VAWeek.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D7F1E45CD2B16ACBB9C945B18D5629 /* VAWeek.swift */; };
+		290F96E5919D6890C2B29F1A88313936 /* VAFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DB6C1E1CAF74287B0AA565C83D91B /* VAFormatters.swift */; };
+		3E9D09D1D4CB46200204AF730824C9AF /* VAMonthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11010DE350FC262AE5572367C614EE57 /* VAMonthHeaderView.swift */; };
+		6952142DBD538F2A3C1AE7D8E7231358 /* VAMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73ACB170504E0706594C2A5865AAD66 /* VAMonthView.swift */; };
+		7BA4A3D860182A6C18A1D25AD2D9901D /* VACalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49CAD36ECD3348A6705AE08375BE335 /* VACalendar.swift */; };
+		7FEED765EDD8780491FDD1D2FF957551 /* VACalendarMonthDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F66219342A3C2F5B71EC35FE71188B /* VACalendarMonthDelegate.swift */; };
+		90484AEC07D78B530C61E835701754E2 /* VADotView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77F09786C3795020AE478E51A63868A /* VADotView.swift */; };
+		96F9749665BD11BCEE2B960EF0BAF200 /* VAWeekDaysView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C2B227F0D9712C9B3E9E65E8615AA /* VAWeekDaysView.swift */; };
+		9E02E077E0B6FCA87F5EBB35E9E8D71E /* VACalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F931E74DE28EF23E67B73C10E272373 /* VACalendarView.swift */; };
+		A019B1340A88B2DFBB2D44C2BD550AD0 /* VADay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7B2CB21ABC37F31B5F3C5FB606009 /* VADay.swift */; };
+		AC4AFA7AAC8AB2C67095627A7BFFE438 /* Pods-scheduleManagement-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2623764704742A5331E8A20B0F189715 /* Pods-scheduleManagement-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BB6057702DBACB065CFEBBD9EFE99819 /* VADayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9729331691C11E7AEA618008F934479 /* VADayView.swift */; };
+		D0535CE9C441E4E388244AA814239966 /* VAWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE73749BA36D91BA336F5343736F2A0 /* VAWeekView.swift */; };
+		DC34444F388F847B40CDF0B19CEE3A15 /* VACalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 923D44D523B63233C3AD49620DC1C81F /* VACalendar-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EC29B77EC702F871A2AC2CBB2D11A4E7 /* VAMonth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A75607FA4DBB18309651DEAADBF72EC /* VAMonth.swift */; };
+		ECD778B5481A35D7373A77FB3C510E26 /* VACalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E16C8B026FD0BCDD95908B0548D3C682 /* VACalendar-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BBD03A3FCFA3351CE24770B27CDEFEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6C228ED36B47A08FB5C937E22F200A;
+			remoteInfo = VACalendar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11010DE350FC262AE5572367C614EE57 /* VAMonthHeaderView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthHeaderView.swift; path = VACalendar/VAMonthHeaderView.swift; sourceTree = "<group>"; };
+		2623764704742A5331E8A20B0F189715 /* Pods-scheduleManagement-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-scheduleManagement-umbrella.h"; sourceTree = "<group>"; };
+		2A75607FA4DBB18309651DEAADBF72EC /* VAMonth.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonth.swift; path = VACalendar/VAMonth.swift; sourceTree = "<group>"; };
+		3A1DB6C1E1CAF74287B0AA565C83D91B /* VAFormatters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAFormatters.swift; path = VACalendar/VAFormatters.swift; sourceTree = "<group>"; };
+		3C30D151D5A5A04134E6A4F1BCAF358E /* Pods-scheduleManagement-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-scheduleManagement-acknowledgements.plist"; sourceTree = "<group>"; };
+		3E5C2B227F0D9712C9B3E9E65E8615AA /* VAWeekDaysView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekDaysView.swift; path = VACalendar/VAWeekDaysView.swift; sourceTree = "<group>"; };
+		581E341548929E26233BB762BD1B19C4 /* libVACalendar.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libVACalendar.a; path = libVACalendar.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60D7F1E45CD2B16ACBB9C945B18D5629 /* VAWeek.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeek.swift; path = VACalendar/VAWeek.swift; sourceTree = "<group>"; };
+		68E0B9676C265CDADDC85658AABA5A65 /* libPods-scheduleManagement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-scheduleManagement.a"; path = "libPods-scheduleManagement.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0B6A50BA9EEFA1E3E09DCEB58225F3 /* VACalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = VACalendar.modulemap; path = ../../Headers/Public/VACalendar/VACalendar.modulemap; sourceTree = "<group>"; };
+		6F931E74DE28EF23E67B73C10E272373 /* VACalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarView.swift; path = VACalendar/VACalendarView.swift; sourceTree = "<group>"; };
+		7EE73749BA36D91BA336F5343736F2A0 /* VAWeekView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAWeekView.swift; path = VACalendar/VAWeekView.swift; sourceTree = "<group>"; };
+		923D44D523B63233C3AD49620DC1C81F /* VACalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "VACalendar-umbrella.h"; path = "../../Headers/Public/VACalendar/VACalendar-umbrella.h"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9894EB6A55398F889CF4013EAA143FD2 /* Pods-scheduleManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scheduleManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		9C45973B1AA42889CAC03D04DA2A5E9C /* Pods-scheduleManagement.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-scheduleManagement.modulemap"; sourceTree = "<group>"; };
+		A6640CE27431C4954E75E7499A9E636F /* Pods-scheduleManagement-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-scheduleManagement-frameworks.sh"; sourceTree = "<group>"; };
+		B4D355F88E023737F8860C41881D64C2 /* Pods-scheduleManagement-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-scheduleManagement-resources.sh"; sourceTree = "<group>"; };
+		D762F524713BD1A0749692AD96D600C3 /* VACalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = VACalendar.xcconfig; sourceTree = "<group>"; };
+		D9729331691C11E7AEA618008F934479 /* VADayView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADayView.swift; path = VACalendar/VADayView.swift; sourceTree = "<group>"; };
+		D9F42E7341C2A2F0E33C627A3266C29A /* Pods-scheduleManagement-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-scheduleManagement-dummy.m"; sourceTree = "<group>"; };
+		DE3F7081D5E77E7386AEC7BB3FCB3B98 /* VACalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "VACalendar-prefix.pch"; sourceTree = "<group>"; };
+		E16C8B026FD0BCDD95908B0548D3C682 /* VACalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "VACalendar-dummy.m"; sourceTree = "<group>"; };
+		E73ACB170504E0706594C2A5865AAD66 /* VAMonthView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VAMonthView.swift; path = VACalendar/VAMonthView.swift; sourceTree = "<group>"; };
+		E77F09786C3795020AE478E51A63868A /* VADotView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADotView.swift; path = VACalendar/VADotView.swift; sourceTree = "<group>"; };
+		F01445E2A9BFC93A2EB5B8F711349A10 /* Pods-scheduleManagement-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-scheduleManagement-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F1F66219342A3C2F5B71EC35FE71188B /* VACalendarMonthDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendarMonthDelegate.swift; path = VACalendar/VACalendarMonthDelegate.swift; sourceTree = "<group>"; };
+		F49CAD36ECD3348A6705AE08375BE335 /* VACalendar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VACalendar.swift; path = VACalendar/VACalendar.swift; sourceTree = "<group>"; };
+		F7791D121358D41A190D600360DDAE60 /* Pods-scheduleManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-scheduleManagement.release.xcconfig"; sourceTree = "<group>"; };
+		FCA7B2CB21ABC37F31B5F3C5FB606009 /* VADay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VADay.swift; path = VACalendar/VADay.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2A9DD543FE38333736D1A506BD9AFAE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE179B57EF241175B3AE870D79D1388B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B363DDCB929CB8DB9476DE22BE307F5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC72884DB93D5EE25E075DDB675CC77B /* Pods-scheduleManagement */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		27FD77053F53890E221F6ED7BED6D631 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				68E0B9676C265CDADDC85658AABA5A65 /* libPods-scheduleManagement.a */,
+				581E341548929E26233BB762BD1B19C4 /* libVACalendar.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5024DB4FDBF9BBA7873AE80A74DED977 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6C0B6A50BA9EEFA1E3E09DCEB58225F3 /* VACalendar.modulemap */,
+				D762F524713BD1A0749692AD96D600C3 /* VACalendar.xcconfig */,
+				E16C8B026FD0BCDD95908B0548D3C682 /* VACalendar-dummy.m */,
+				DE3F7081D5E77E7386AEC7BB3FCB3B98 /* VACalendar-prefix.pch */,
+				923D44D523B63233C3AD49620DC1C81F /* VACalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/VACalendar";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				F5E71CC7BA3D0E9FAC7E45379B122ECE /* Pods */,
+				27FD77053F53890E221F6ED7BED6D631 /* Products */,
+				1B363DDCB929CB8DB9476DE22BE307F5 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		BC72884DB93D5EE25E075DDB675CC77B /* Pods-scheduleManagement */ = {
+			isa = PBXGroup;
+			children = (
+				9C45973B1AA42889CAC03D04DA2A5E9C /* Pods-scheduleManagement.modulemap */,
+				F01445E2A9BFC93A2EB5B8F711349A10 /* Pods-scheduleManagement-acknowledgements.markdown */,
+				3C30D151D5A5A04134E6A4F1BCAF358E /* Pods-scheduleManagement-acknowledgements.plist */,
+				D9F42E7341C2A2F0E33C627A3266C29A /* Pods-scheduleManagement-dummy.m */,
+				A6640CE27431C4954E75E7499A9E636F /* Pods-scheduleManagement-frameworks.sh */,
+				B4D355F88E023737F8860C41881D64C2 /* Pods-scheduleManagement-resources.sh */,
+				2623764704742A5331E8A20B0F189715 /* Pods-scheduleManagement-umbrella.h */,
+				9894EB6A55398F889CF4013EAA143FD2 /* Pods-scheduleManagement.debug.xcconfig */,
+				F7791D121358D41A190D600360DDAE60 /* Pods-scheduleManagement.release.xcconfig */,
+			);
+			name = "Pods-scheduleManagement";
+			path = "Target Support Files/Pods-scheduleManagement";
+			sourceTree = "<group>";
+		};
+		C70F33DA39CA2C7E5D2E1CE11624BF0E /* VACalendar */ = {
+			isa = PBXGroup;
+			children = (
+				F49CAD36ECD3348A6705AE08375BE335 /* VACalendar.swift */,
+				F1F66219342A3C2F5B71EC35FE71188B /* VACalendarMonthDelegate.swift */,
+				6F931E74DE28EF23E67B73C10E272373 /* VACalendarView.swift */,
+				FCA7B2CB21ABC37F31B5F3C5FB606009 /* VADay.swift */,
+				D9729331691C11E7AEA618008F934479 /* VADayView.swift */,
+				E77F09786C3795020AE478E51A63868A /* VADotView.swift */,
+				3A1DB6C1E1CAF74287B0AA565C83D91B /* VAFormatters.swift */,
+				2A75607FA4DBB18309651DEAADBF72EC /* VAMonth.swift */,
+				11010DE350FC262AE5572367C614EE57 /* VAMonthHeaderView.swift */,
+				E73ACB170504E0706594C2A5865AAD66 /* VAMonthView.swift */,
+				60D7F1E45CD2B16ACBB9C945B18D5629 /* VAWeek.swift */,
+				3E5C2B227F0D9712C9B3E9E65E8615AA /* VAWeekDaysView.swift */,
+				7EE73749BA36D91BA336F5343736F2A0 /* VAWeekView.swift */,
+				5024DB4FDBF9BBA7873AE80A74DED977 /* Support Files */,
+			);
+			name = VACalendar;
+			path = VACalendar;
+			sourceTree = "<group>";
+		};
+		F5E71CC7BA3D0E9FAC7E45379B122ECE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C70F33DA39CA2C7E5D2E1CE11624BF0E /* VACalendar */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		871F1ADB578F60AE2737115ECCEEE1BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4AFA7AAC8AB2C67095627A7BFFE438 /* Pods-scheduleManagement-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED16813FD53DDBE020E7F1DF1C0194AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC34444F388F847B40CDF0B19CEE3A15 /* VACalendar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C6C228ED36B47A08FB5C937E22F200A /* VACalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A4567813948D4E4AEBBAB841C10CE2 /* Build configuration list for PBXNativeTarget "VACalendar" */;
+			buildPhases = (
+				ED16813FD53DDBE020E7F1DF1C0194AE /* Headers */,
+				EBF1801816232EA96EE48FD79FCFDCC9 /* Sources */,
+				FE179B57EF241175B3AE870D79D1388B /* Frameworks */,
+				2A2916618D6A7A47752FF19208A9019F /* Copy generated compatibility header */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VACalendar;
+			productName = VACalendar;
+			productReference = 581E341548929E26233BB762BD1B19C4 /* libVACalendar.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5CB225BC31DE0FAADF435CDADB280ED9 /* Pods-scheduleManagement */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7B1F387FD7AD500E12571DBDDD01A50 /* Build configuration list for PBXNativeTarget "Pods-scheduleManagement" */;
+			buildPhases = (
+				871F1ADB578F60AE2737115ECCEEE1BA /* Headers */,
+				B6E855901762F7AC0EE952CE781757B3 /* Sources */,
+				2A9DD543FE38333736D1A506BD9AFAE5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F795310CC436EF84522EC189AF44ABC5 /* PBXTargetDependency */,
+			);
+			name = "Pods-scheduleManagement";
+			productName = "Pods-scheduleManagement";
+			productReference = 68E0B9676C265CDADDC85658AABA5A65 /* libPods-scheduleManagement.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 27FD77053F53890E221F6ED7BED6D631 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CB225BC31DE0FAADF435CDADB280ED9 /* Pods-scheduleManagement */,
+				2C6C228ED36B47A08FB5C937E22F200A /* VACalendar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2A2916618D6A7A47752FF19208A9019F /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/VACalendar/VACalendar.modulemap",
+				"${PODS_ROOT}/Headers/Public/VACalendar/VACalendar-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/VACalendar-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VACalendar/VACalendar.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/VACalendar/VACalendar-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
+			showEnvVarsInLog = 1;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6E855901762F7AC0EE952CE781757B3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				102D4C3B018722F1F2CB8582AEC11B48 /* Pods-scheduleManagement-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBF1801816232EA96EE48FD79FCFDCC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECD778B5481A35D7373A77FB3C510E26 /* VACalendar-dummy.m in Sources */,
+				7BA4A3D860182A6C18A1D25AD2D9901D /* VACalendar.swift in Sources */,
+				7FEED765EDD8780491FDD1D2FF957551 /* VACalendarMonthDelegate.swift in Sources */,
+				9E02E077E0B6FCA87F5EBB35E9E8D71E /* VACalendarView.swift in Sources */,
+				A019B1340A88B2DFBB2D44C2BD550AD0 /* VADay.swift in Sources */,
+				BB6057702DBACB065CFEBBD9EFE99819 /* VADayView.swift in Sources */,
+				90484AEC07D78B530C61E835701754E2 /* VADotView.swift in Sources */,
+				290F96E5919D6890C2B29F1A88313936 /* VAFormatters.swift in Sources */,
+				EC29B77EC702F871A2AC2CBB2D11A4E7 /* VAMonth.swift in Sources */,
+				3E9D09D1D4CB46200204AF730824C9AF /* VAMonthHeaderView.swift in Sources */,
+				6952142DBD538F2A3C1AE7D8E7231358 /* VAMonthView.swift in Sources */,
+				18D83FEAA051737F52D972E9B32AE85B /* VAWeek.swift in Sources */,
+				96F9749665BD11BCEE2B960EF0BAF200 /* VAWeekDaysView.swift in Sources */,
+				D0535CE9C441E4E388244AA814239966 /* VAWeekView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F795310CC436EF84522EC189AF44ABC5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VACalendar;
+			target = 2C6C228ED36B47A08FB5C937E22F200A /* VACalendar */;
+			targetProxy = 1BBD03A3FCFA3351CE24770B27CDEFEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0AA3B91655AF95B1F49159CD8085CD89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4D22A117F5F6A3B69EBB4C2AB350F1EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D762F524713BD1A0749692AD96D600C3 /* VACalendar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VACalendar/VACalendar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/VACalendar/VACalendar.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VACalendar;
+				PRODUCT_NAME = VACalendar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FDC6784192D3B595907825D879A1CC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D762F524713BD1A0749692AD96D600C3 /* VACalendar.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/VACalendar/VACalendar-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MODULEMAP_FILE = Headers/Public/VACalendar/VACalendar.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = VACalendar;
+				PRODUCT_NAME = VACalendar;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8000995DA02063BF3777393CD52061DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CC4E45E95F7168370D5EC3203D5D9174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7791D121358D41A190D600360DDAE60 /* Pods-scheduleManagement.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-scheduleManagement/Pods-scheduleManagement.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D7129D1343851702738680AF563EB126 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9894EB6A55398F889CF4013EAA143FD2 /* Pods-scheduleManagement.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-scheduleManagement/Pods-scheduleManagement.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AA3B91655AF95B1F49159CD8085CD89 /* Debug */,
+				8000995DA02063BF3777393CD52061DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7B1F387FD7AD500E12571DBDDD01A50 /* Build configuration list for PBXNativeTarget "Pods-scheduleManagement" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7129D1343851702738680AF563EB126 /* Debug */,
+				CC4E45E95F7168370D5EC3203D5D9174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A4567813948D4E4AEBBAB841C10CE2 /* Build configuration list for PBXNativeTarget "VACalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FDC6784192D3B595907825D879A1CC5 /* Debug */,
+				4D22A117F5F6A3B69EBB4C2AB350F1EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

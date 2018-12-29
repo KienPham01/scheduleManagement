@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227D628A6E23BA707208D464 /* libPods-scheduleManagement.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 045B263174CFFA34B0A4693F /* libPods-scheduleManagement.a */; };
 		9D8A613B21D745620045BB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A613A21D745620045BB45 /* AppDelegate.swift */; };
 		9D8A613D21D745620045BB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A613C21D745620045BB45 /* ViewController.swift */; };
 		9D8A614021D745620045BB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8A613E21D745620045BB45 /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		045B263174CFFA34B0A4693F /* libPods-scheduleManagement.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-scheduleManagement.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3266C8B00BD7304BCA1158E8 /* Pods-scheduleManagement.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scheduleManagement.debug.xcconfig"; path = "Pods/Target Support Files/Pods-scheduleManagement/Pods-scheduleManagement.debug.xcconfig"; sourceTree = "<group>"; };
+		882C74B6CBB6911CF8B92409 /* Pods-scheduleManagement.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scheduleManagement.release.xcconfig"; path = "Pods/Target Support Files/Pods-scheduleManagement/Pods-scheduleManagement.release.xcconfig"; sourceTree = "<group>"; };
 		9D8A613721D745620045BB45 /* scheduleManagement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scheduleManagement.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8A613A21D745620045BB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D8A613C21D745620045BB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227D628A6E23BA707208D464 /* libPods-scheduleManagement.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83DC4AEE7DB19A62CCCDDA52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				045B263174CFFA34B0A4693F /* libPods-scheduleManagement.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9D8A612E21D745620045BB45 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +94,8 @@
 				9D8A614E21D745650045BB45 /* scheduleManagementTests */,
 				9D8A615921D745650045BB45 /* scheduleManagementUITests */,
 				9D8A613821D745620045BB45 /* Products */,
+				BA69CEAEE1A24FF4967900B5 /* Pods */,
+				83DC4AEE7DB19A62CCCDDA52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,15 @@
 			path = scheduleManagementUITests;
 			sourceTree = "<group>";
 		};
+		BA69CEAEE1A24FF4967900B5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3266C8B00BD7304BCA1158E8 /* Pods-scheduleManagement.debug.xcconfig */,
+				882C74B6CBB6911CF8B92409 /* Pods-scheduleManagement.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,6 +156,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9D8A615F21D745650045BB45 /* Build configuration list for PBXNativeTarget "scheduleManagement" */;
 			buildPhases = (
+				23A28992E1073F7BAAE11AB3 /* [CP] Check Pods Manifest.lock */,
 				9D8A613321D745620045BB45 /* Sources */,
 				9D8A613421D745620045BB45 /* Frameworks */,
 				9D8A613521D745620045BB45 /* Resources */,
@@ -250,6 +275,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23A28992E1073F7BAAE11AB3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-scheduleManagement-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9D8A613321D745620045BB45 /* Sources */ = {
@@ -430,10 +480,12 @@
 		};
 		9D8A616021D745650045BB45 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3266C8B00BD7304BCA1158E8 /* Pods-scheduleManagement.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = scheduleManagement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -447,10 +499,12 @@
 		};
 		9D8A616121D745650045BB45 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882C74B6CBB6911CF8B92409 /* Pods-scheduleManagement.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = scheduleManagement/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

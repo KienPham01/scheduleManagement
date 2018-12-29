@@ -1,0 +1,16 @@
+PODS:
+  - VACalendar (1.3)
+
+DEPENDENCIES:
+  - VACalendar
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - VACalendar
+
+SPEC CHECKSUMS:
+  VACalendar: 3e5a001cbf437ebed2bcfc747f3187e555d65175
+
+PODFILE CHECKSUM: 28ccedabd29fc35c961b1292453912482c93166b
+
+COCOAPODS: 1.5.3

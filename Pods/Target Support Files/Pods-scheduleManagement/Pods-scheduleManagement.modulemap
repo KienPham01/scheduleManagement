@@ -1,0 +1,6 @@
+module Pods_scheduleManagement {
+  umbrella header "Pods-scheduleManagement-umbrella.h"
+
+  export *
+  module * { export * }
+}
