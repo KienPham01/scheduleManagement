@@ -90,6 +90,8 @@ class VADayView: UIView {
     
     @objc
     private func didTapSelect() {
+        
+//        let detailCalendar =  
         guard day.state != .out && day.state != .unavailable else { return }
         delegate?.dayStateChanged(day)
     }
@@ -138,5 +140,11 @@ class VADayView: UIView {
         supplementaryViews.forEach { $0.removeFromSuperview() }
         supplementaryViews = []
     }
+    
+    
+   
+    
+    
+    
     
 }

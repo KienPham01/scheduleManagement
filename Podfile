@@ -4,6 +4,6 @@
 target 'scheduleManagement' do
 
 pod 'VACalendar'
-
+pod 'Alamofire'
 	
 end

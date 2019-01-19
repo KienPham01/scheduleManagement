@@ -56,9 +56,9 @@ final class ViewController: UIViewController{
         calendarView.showDaysOut = true
         calendarView.selectionStyle = .multi
         calendarView.monthDelegate = mothHearderView
-        calendarView.dayViewAppearanceDelegate = self as! VADayViewAppearanceDelegate
-        calendarView.monthViewAppearanceDelegate = self as! VAMonthViewAppearanceDelegate
-        calendarView.calendarDelegate = self as! VACalendarViewDelegate
+        calendarView.dayViewAppearanceDelegate = self as VADayViewAppearanceDelegate
+        calendarView.monthViewAppearanceDelegate = self as VAMonthViewAppearanceDelegate
+        calendarView.calendarDelegate = self as VACalendarViewDelegate
         calendarView.scrollDirection = .horizontal
         view.addSubview(calendarView)
         
@@ -166,7 +166,14 @@ extension ViewController: VACalendarViewDelegate {
     
     func selectedDates(_ dates: [Date]) {
         calendarView.startDate = dates.last ?? Date()
-        print(dates)
+        let detailCalendar = storyboard?.instantiateViewController(withIdentifier: "DetailCalendarVC")
+        if detailCalendar != nil {
+            self.present((detailCalendar)!, animated: true, completion: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
     }
     
 }
