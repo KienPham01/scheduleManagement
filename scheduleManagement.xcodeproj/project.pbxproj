@@ -16,6 +16,8 @@
 		9D8A615021D745650045BB45 /* scheduleManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A614F21D745650045BB45 /* scheduleManagementTests.swift */; };
 		9D8A615B21D745650045BB45 /* scheduleManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A615A21D745650045BB45 /* scheduleManagementUITests.swift */; };
 		9DA314EA21F1ED86001DFB22 /* DetailCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA314E921F1ED86001DFB22 /* DetailCalendarVC.swift */; };
+		9DC7EE79220450D500940A96 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7EE78220450D500940A96 /* AddToDoViewController.swift */; };
+		9DC7EE7B220450FA00940A96 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7EE7A220450FA00940A96 /* ToDoTableViewController.swift */; };
 		9DE4841421F2B6D900754F34 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4841321F2B6D900754F34 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 		9D8A615A21D745650045BB45 /* scheduleManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleManagementUITests.swift; sourceTree = "<group>"; };
 		9D8A615C21D745650045BB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA314E921F1ED86001DFB22 /* DetailCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCalendarVC.swift; sourceTree = "<group>"; };
+		9DC7EE78220450D500940A96 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		9DC7EE7A220450FA00940A96 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		9DE4841321F2B6D900754F34 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +170,8 @@
 				9D8A613C21D745620045BB45 /* ViewController.swift */,
 				9DA314E921F1ED86001DFB22 /* DetailCalendarVC.swift */,
 				9DE4841321F2B6D900754F34 /* LoginVC.swift */,
+				9DC7EE78220450D500940A96 /* AddToDoViewController.swift */,
+				9DC7EE7A220450FA00940A96 /* ToDoTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8A613D21D745620045BB45 /* ViewController.swift in Sources */,
+				9DC7EE7B220450FA00940A96 /* ToDoTableViewController.swift in Sources */,
 				9DA314EA21F1ED86001DFB22 /* DetailCalendarVC.swift in Sources */,
+				9DC7EE79220450D500940A96 /* AddToDoViewController.swift in Sources */,
 				9DE4841421F2B6D900754F34 /* LoginVC.swift in Sources */,
 				9D8A613B21D745620045BB45 /* AppDelegate.swift in Sources */,
 			);
