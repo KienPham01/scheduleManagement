@@ -15,7 +15,9 @@
 		9D8A614521D745650045BB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8A614321D745650045BB45 /* LaunchScreen.storyboard */; };
 		9D8A615021D745650045BB45 /* scheduleManagementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A614F21D745650045BB45 /* scheduleManagementTests.swift */; };
 		9D8A615B21D745650045BB45 /* scheduleManagementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8A615A21D745650045BB45 /* scheduleManagementUITests.swift */; };
+		9D9B65F1220595BD0016AF57 /* Todo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D9B65EF220595BD0016AF57 /* Todo.xcdatamodeld */; };
 		9DA314EA21F1ED86001DFB22 /* DetailCalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA314E921F1ED86001DFB22 /* DetailCalendarVC.swift */; };
+		9DB964F52205E10200C11EB2 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB964F42205E10200C11EB2 /* CoreDataStack.swift */; };
 		9DC7EE79220450D500940A96 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7EE78220450D500940A96 /* AddToDoViewController.swift */; };
 		9DC7EE7B220450FA00940A96 /* ToDoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC7EE7A220450FA00940A96 /* ToDoTableViewController.swift */; };
 		9DE4841421F2B6D900754F34 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DE4841321F2B6D900754F34 /* LoginVC.swift */; };
@@ -55,7 +57,9 @@
 		9D8A615621D745650045BB45 /* scheduleManagementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scheduleManagementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8A615A21D745650045BB45 /* scheduleManagementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scheduleManagementUITests.swift; sourceTree = "<group>"; };
 		9D8A615C21D745650045BB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D9B65F0220595BD0016AF57 /* Todo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Todo.xcdatamodel; sourceTree = "<group>"; };
 		9DA314E921F1ED86001DFB22 /* DetailCalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCalendarVC.swift; sourceTree = "<group>"; };
+		9DB964F42205E10200C11EB2 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		9DC7EE78220450D500940A96 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
 		9DC7EE7A220450FA00940A96 /* ToDoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTableViewController.swift; sourceTree = "<group>"; };
 		9DE4841321F2B6D900754F34 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -120,6 +124,7 @@
 		9D8A613921D745620045BB45 /* scheduleManagement */ = {
 			isa = PBXGroup;
 			children = (
+				9D9B65EE220591380016AF57 /* CoreData */,
 				9DA314E821F1ECB8001DFB22 /* Controller */,
 				9DA314E721F1ECA0001DFB22 /* View */,
 				9D8A613A21D745620045BB45 /* AppDelegate.swift */,
@@ -148,6 +153,15 @@
 				9D8A615C21D745650045BB45 /* Info.plist */,
 			);
 			path = scheduleManagementUITests;
+			sourceTree = "<group>";
+		};
+		9D9B65EE220591380016AF57 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9D9B65EF220595BD0016AF57 /* Todo.xcdatamodeld */,
+				9DB964F42205E10200C11EB2 /* CoreDataStack.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 		9DA314E621F1EC8F001DFB22 /* Model */ = {
@@ -343,11 +357,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D8A613D21D745620045BB45 /* ViewController.swift in Sources */,
+				9D9B65F1220595BD0016AF57 /* Todo.xcdatamodeld in Sources */,
 				9DC7EE7B220450FA00940A96 /* ToDoTableViewController.swift in Sources */,
 				9DA314EA21F1ED86001DFB22 /* DetailCalendarVC.swift in Sources */,
 				9DC7EE79220450D500940A96 /* AddToDoViewController.swift in Sources */,
 				9DE4841421F2B6D900754F34 /* LoginVC.swift in Sources */,
 				9D8A613B21D745620045BB45 /* AppDelegate.swift in Sources */,
+				9DB964F52205E10200C11EB2 /* CoreDataStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -674,6 +690,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D9B65EF220595BD0016AF57 /* Todo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D9B65F0220595BD0016AF57 /* Todo.xcdatamodel */,
+			);
+			currentVersion = 9D9B65F0220595BD0016AF57 /* Todo.xcdatamodel */;
+			path = Todo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9D8A612F21D745620045BB45 /* Project object */;
 }

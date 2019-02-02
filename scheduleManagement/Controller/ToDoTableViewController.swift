@@ -7,40 +7,89 @@
 //
 
 import UIKit
+import CoreData
 
 class ToDoTableViewController: UITableViewController {
-
+    
+    var resultsController:NSFetchedResultsController<Todo>!
+    let coreData =  CoreDataStack()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        let request:NSFetchRequest<Todo> = Todo.fetchRequest()
+        let sortDescriptors = NSSortDescriptor(key: "date", ascending: true)
+        request.sortDescriptors = [sortDescriptors]
+        resultsController = NSFetchedResultsController(fetchRequest: request, managedObjectContext: coreData.managedContext, sectionNameKeyPath: nil, cacheName: nil)
+        
+        do{
+            
+            try resultsController.performFetch()
+        }catch{
+            
+            print("Perform fetch erro:\(error)")
+        }
+        
+     
     }
+    
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
+//    override func numberOfSections(in tableView: UITableView) -> Int {
+//        // #warning Incomplete implementation, return the number of sections
+//        return resultsController.sections[]
+//    }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        return resultsController.sections?[section].numberOfObjects ?? 0
+
+       
+    }
+    
+    //Mark- Tableview delegate
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action  = UIContextualAction(style: .destructive, title: "Delete"){ (action,view,completion) in
+            
+            completion(true)
+        }
+        action.image = UIImage(named: "trash-2")
+        
+        action.backgroundColor = .red
+        return UISwipeActionsConfiguration(actions: [action])
     }
 
-    /*
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TodoCell", for: indexPath)
+        let todo =  resultsController.object(at: indexPath)
+        cell.textLabel?.text = todo.title
+//        cell.
         // Configure the cell...
 
         return cell
     }
-    */
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let  _ =  sender as? UIBarButtonItem, let vc = segue.destination as? AddToDoViewController {
+            vc.managerContext  = coreData.managedContext
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        let action  = UIContextualAction(style: .destructive, title: "Delete"){ (action,view,completion) in
+            
+            completion(true)
+        }
+        action.image = UIImage(named:  "check")
+        
+        action.backgroundColor = .red
+        return UISwipeActionsConfiguration(actions: [action])
+      
+    }
+
 
     /*
     // Override to support conditional editing of the table view.

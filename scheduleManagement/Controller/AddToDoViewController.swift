@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class AddToDoViewController: UIViewController {
+    var managerContext:NSManagedObjectContext!
 
     @IBOutlet var textView: UITextView!
     
@@ -25,17 +27,33 @@ class AddToDoViewController: UIViewController {
     
     
     @IBAction func doneButton(_ sender: Any) {
+        
+        guard let title = textView.text,!title.isEmpty else {
+            return
+        }
+        let todo = Todo(context: managerContext)
+        todo.title = title
+        todo.priority = Int16(segmentedControl.selectedSegmentIndex)
+        todo.date = Date()
+        do{
+            try managerContext.save()
+            dismiss(animated: true, completion: nil)
+
+        }
+        catch{
+            
+            print("Error saving todo:\(error)")
+        }
+//        dismiss(animated: true, completion: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(keyboardWillShow(with:)),
-            name: .UIKeyboardWillShow,
-            object: nil
-        )
-        textView.becomeFirstResponder()
+//        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: .didReceiveData, object: nil)
+
+   
+//        textView.becomeFirstResponder()
         
 //        NotificationCenter.default.addObserver(self,
 //                            selector: #selector(keyboardWillShow(with:)),
@@ -44,6 +62,9 @@ class AddToDoViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
     @objc func keyboardWillShow(with notification:Notification){
         let key = "UIKeyboardFrameEndUserInfoKey"
 
@@ -71,3 +92,19 @@ class AddToDoViewController: UIViewController {
     */
 
 }
+ 
+ extension AddToDoViewController:UITextViewDelegate{
+    
+    func textViewDidChange(_ textView: UITextView) {
+        if done.isHidden{
+            textView.text.removeAll()
+            textView.textColor = .white
+            done.isHidden = false
+            
+            UIView.animate(withDuration: 0.3){
+                self.view.layoutIfNeeded()
+            }
+            
+        }
+    }
+ }

@@ -234,90 +234,91 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Wuy-Xg-MGu">
-                                <rect key="frame" x="16" y="20" width="343" height="267"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="HCG-Ix-6bD">
+                                <rect key="frame" x="16" y="601" width="343" height="66"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmq-Vl-5oc">
-                                        <rect key="frame" x="80.5" y="0.0" width="182" height="25"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="25" id="6ot-Mw-gDD"/>
-                                        </constraints>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d6g-z2-Hcn">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="29"/>
+                                        <segments>
+                                            <segment title="I"/>
+                                            <segment title="II"/>
+                                            <segment title="IIII"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RQ3-PS-STt">
+                                        <rect key="frame" x="0.0" y="36" width="343" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="krc-j6-ujx">
+                                                <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="lXx-a7-Dg5"/>
+                                                </constraints>
+                                                <state key="normal" title="Cancel"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadious">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="cancelButton:" destination="gkK-mT-dCM" eventType="touchUpInside" id="oIv-Il-fdN"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="245" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVO-DU-7NL">
+                                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
+                                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Done"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadious">
+                                                        <integer key="value" value="8"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doneButton:" destination="gkK-mT-dCM" eventType="touchUpInside" id="P56-OB-bZ3"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e1F-cl-XdW">
+                                <rect key="frame" x="9" y="20" width="350" height="267"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you want to do today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfi-59-mJm">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="245" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EqS-od-QK0">
-                                        <rect key="frame" x="4.5" y="33" width="334" height="234"/>
-                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="say something">
-                                                <attributes>
-                                                    <font key="NSFont" size="17" name="ArialMT"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Say something...." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BSL-cn-YMb">
+                                        <rect key="frame" x="0.0" y="20.5" width="350" height="246.5"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4dg-mS-yPL">
-                                <rect key="frame" x="16" y="637" width="343" height="30"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vvN-SI-CMC">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="792-9D-5MO"/>
-                                        </constraints>
-                                        <state key="normal" title="Cancel"/>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.conerRadious">
-                                                <integer key="value" value="8"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="cancelButton:" destination="gkK-mT-dCM" eventType="touchUpInside" id="GRV-3w-tm3"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="245" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPb-X6-IoT">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="30"/>
-                                        <state key="normal" title="Done"/>
-                                        <connections>
-                                            <action selector="doneButton:" destination="gkK-mT-dCM" eventType="touchUpInside" id="3t2-4d-aWt"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="d6g-z2-Hcn">
-                                <rect key="frame" x="77" y="591" width="242" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="I"/>
-                                    <segment title="II"/>
-                                    <segment title="IIII"/>
-                                </segments>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="Wuy-Xg-MGu" firstAttribute="height" secondItem="CbL-DD-wkC" secondAttribute="height" multiplier="0.4" id="ENC-hw-ek9"/>
-                            <constraint firstItem="DsT-dq-pn0" firstAttribute="trailing" secondItem="Wuy-Xg-MGu" secondAttribute="trailing" constant="16" id="H6k-I0-nUA"/>
-                            <constraint firstItem="DsT-dq-pn0" firstAttribute="trailing" secondItem="4dg-mS-yPL" secondAttribute="trailing" constant="16" id="KoV-3k-OzL"/>
-                            <constraint firstItem="4dg-mS-yPL" firstAttribute="leading" secondItem="DsT-dq-pn0" secondAttribute="leading" constant="16" id="fyR-t3-kJR"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="4dg-mS-yPL" secondAttribute="bottom" id="pSq-FT-w50"/>
-                            <constraint firstItem="Wuy-Xg-MGu" firstAttribute="top" secondItem="DsT-dq-pn0" secondAttribute="top" id="vMY-ZB-QYh"/>
-                            <constraint firstItem="Wuy-Xg-MGu" firstAttribute="leading" secondItem="DsT-dq-pn0" secondAttribute="leading" constant="16" id="wNw-Ot-lY3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="HCG-Ix-6bD" secondAttribute="bottom" id="57S-Sj-AKN"/>
+                            <constraint firstItem="e1F-cl-XdW" firstAttribute="leading" secondItem="DsT-dq-pn0" secondAttribute="leading" constant="9" id="Isw-zN-FCQ"/>
+                            <constraint firstItem="HCG-Ix-6bD" firstAttribute="leading" secondItem="DsT-dq-pn0" secondAttribute="leading" constant="16" id="LtW-nD-pEF"/>
+                            <constraint firstItem="DsT-dq-pn0" firstAttribute="trailing" secondItem="e1F-cl-XdW" secondAttribute="trailing" constant="16" id="PMi-8R-Ak9"/>
+                            <constraint firstItem="e1F-cl-XdW" firstAttribute="height" secondItem="CbL-DD-wkC" secondAttribute="height" multiplier="0.4" id="cmY-M9-jeq"/>
+                            <constraint firstItem="e1F-cl-XdW" firstAttribute="top" secondItem="DsT-dq-pn0" secondAttribute="top" id="qeq-0U-jBg"/>
+                            <constraint firstItem="DsT-dq-pn0" firstAttribute="trailing" secondItem="HCG-Ix-6bD" secondAttribute="trailing" constant="16" id="y0I-MJ-bYc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DsT-dq-pn0"/>
                     </view>
                     <connections>
-                        <outlet property="doneButton" destination="oPb-X6-IoT" id="tM0-Iv-ouJ"/>
                         <outlet property="segmentedControl" destination="d6g-z2-Hcn" id="siJ-9h-Ipc"/>
-                        <outlet property="textView" destination="EqS-od-QK0" id="0yU-zY-9UO"/>
+                        <outlet property="textView" destination="BSL-cn-YMb" id="Co5-T8-cee"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fof-Hj-HYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4396" y="-17"/>
+            <point key="canvasLocation" x="4278" y="-170"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o2O-5G-mWg">
